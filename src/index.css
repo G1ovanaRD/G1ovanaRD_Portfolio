@@ -4,8 +4,35 @@
 @tailwind utilities;
 body {
   font-family: "Host Grotesk", sans-serif;
+  background-image: url('../src/assets/bg3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.about{
+  background-image: url('../src/assets/bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 li{
     cursor: pointer;
 }
+
+li:hover{
+  color:#DD215F;
+}
+
+.social li{
+  padding: 0.5rem;
+  /* margin-top: 0.5rem;
+  margin-bottom: 1rem; */
+}
+
+.social li:hover{
+  background-color: #FDCED9;
+  border-radius: 0.5rem;
+}
+
