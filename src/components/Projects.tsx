@@ -3,10 +3,12 @@ import p2_1 from "../assets/p2_1.png";
 import p2_2 from "../assets/p2_2.png";
 import p3 from "../assets/p3.png";
 import p4 from "../assets/p4.png";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
+  const navigate = useNavigate();
   return (
-    <div className="about text-center md:px-[4rem] px-[1rem]">
+    <div id="projects" className="about text-center md:px-[4rem] px-[1rem]">
       <div className="py-[4rem]">
         <h1 className="text-[2rem] w-fit mx-auto borber border-b-4 border-[#F14273] md:text-[3rem] font-bold">
           PROJECTS
@@ -15,22 +17,33 @@ function Projects() {
           Here you will find some of the personal and school projects that I
           created with each project containing its own case study
         </p>
-        {/* Project1 */}
+
+        {/* Project3 */}
         <div className="grid md:grid-cols-2 md:text-start px-5 my-[5rem]">
-          <div>
-            <img src={p1} alt="logo" className="object-contain" />
+          <div className="flex justify-evenly">
+            <img src={p3} alt="logo" className="object-contain max-h-[500px]" />
           </div>
           <div className="md:ps-[4rem] content-center">
             <h1 className="text-3xl font-bold md:mb-[1rem] mb-[1rem]">
-              ARTFUL
+              EInsomnia
             </h1>
             <p className="text-[1.2rem] md:pe-[3rem] mb-[1rem]">
-              ARTFUL is an interactive web interface that I designed and
-              developed, focused on showcasing art collections, photographs,
-              artists, and exhibitions with a modern and dynamic visual
-              experience.
+              EInsomnia is a comprehensive e-commerce web application for
+              electronics that I developed using Angular 18 and Node.js. This
+              full-stack project features user authentication, shopping cart
+              functionality, and product management capabilities, serving as a
+              complete online electronics store with modern UI/UX design and
+              scalable backend architecture.
             </p>
-            <button className="border bg-[#dd215f] rounded-[0.5rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.2rem]">
+            <button
+              className="btn-project border bg-[#dd215f] rounded-[0.5rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.2rem]"
+              onClick={() => {
+                navigate("/einsomnia");
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }, 100);
+              }}
+            >
               See project
             </button>
           </div>
@@ -55,37 +68,51 @@ function Projects() {
               DoctorNear
             </h1>
             <p className="text-[1.2rem] md:pe-[3rem] mb-[1rem]">
-              MedicHub (Doctonear) is a Flutter mobile application developed to
-              connect patients with doctors easily and efficiently. The app
-              allows users to search for doctors by specialty or name, view
-              their detailed profiles, schedule medical appointments, and manage
-              scheduled appointments, all integrated with Firebase for
-              authentication and real-time database.
+              Doctonear is a Flutter mobile application developed to connect
+              patients with doctors easily and efficiently. The app allows users
+              to search for doctors by specialty or name, view their detailed
+              profiles, schedule medical appointments, and manage scheduled
+              appointments, all integrated with Firebase for authentication and
+              real-time database.
             </p>
-            <button className="border bg-[#dd215f] rounded-[0.5rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.2rem]">
+            <button
+              className="btn-project border bg-[#dd215f] rounded-[0.5rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.2rem]"
+              onClick={() => {
+                navigate("/doctornear");
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }, 100);
+              }}
+            >
               See project
             </button>
           </div>
         </div>
 
-        {/* Project3 */}
+        {/* Project1 */}
         <div className="grid md:grid-cols-2 md:text-start px-5 my-[5rem]">
-          <div className="flex justify-evenly">
-            <img src={p3} alt="logo" className="object-contain max-h-[500px]" />
+          <div>
+            <img src={p1} alt="logo" className="object-contain" />
           </div>
           <div className="md:ps-[4rem] content-center">
             <h1 className="text-3xl font-bold md:mb-[1rem] mb-[1rem]">
-              EInsomnia
+              ARTFUL
             </h1>
             <p className="text-[1.2rem] md:pe-[3rem] mb-[1rem]">
-              EInsomnia is a comprehensive e-commerce web application for
-              electronics that I developed using Angular 18 and Node.js. This
-              full-stack project features user authentication, shopping cart
-              functionality, and product management capabilities, serving as a
-              complete online electronics store with modern UI/UX design and
-              scalable backend architecture.
+              ARTFUL is an interactive web interface that I designed and
+              developed, focused on showcasing art collections, photographs,
+              artists, and exhibitions with a modern and dynamic visual
+              experience.
             </p>
-            <button className="border bg-[#dd215f] rounded-[0.5rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.2rem]">
+            <button
+              className="btn-project border bg-[#dd215f] rounded-[0.5rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.2rem]"
+              onClick={() => {
+                navigate("/gallery");
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }, 100);
+              }}
+            >
               See project
             </button>
           </div>
@@ -108,7 +135,15 @@ function Projects() {
               clothing for cats and dogs, and has become a valuable resource for
               pet owners who want to make their own pet accessories at home.
             </p>
-            <button className="border bg-[#dd215f] rounded-[0.5rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.2rem]">
+            <button
+              className="btn-project border bg-[#dd215f] rounded-[0.5rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.2rem]"
+              onClick={() => {
+                navigate("/tericlothes");
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }, 100);
+              }}
+            >
               See project
             </button>
           </div>
