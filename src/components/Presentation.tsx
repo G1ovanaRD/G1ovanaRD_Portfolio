@@ -2,18 +2,18 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Presentation() {
   return (
-    <div className="container mx-auto text-center">
+    <div className="container mx-auto text-center pb-[10rem]">
       <div className="relative text-center w-full">
-        <h1 className="text-[3.2rem] mb-7 md:text-[5rem] font-bold mt-5 md:mt-[10rem]">
+        <h1 className="slide-in-left text-[3.2rem] mb-7 md:text-[5rem] font-bold mt-5 md:mt-[10rem] px-2">
           Hi, I'm Giovana Rodríguez
         </h1>
         <div>
-          <p className="text-2xl px-5 mb-5 md:px-[10rem]">
+          <p className="slide-in-left-presentation text-2xl px-5 mb-14 md:mb-7 md:px-[10rem]">
             Web developer with a focus on UX/UI, dedicated to creating modern
             interfaces that combine aesthetics, functionality, and an
             exceptional user experience.
           </p>
-          <button className="border bg-[#dd215f] rounded-[1rem] font-bold px-14 py-3 text-white text-[1rem] md:text-[1.5rem]">
+          <button className="slide-in-top border bg-[#dd215f] rounded-[1rem] font-bold px-14 py-3 text-white text-[1.5rem] md:text-[1.5rem]">
             PROJECTS
           </button>
         </div>
